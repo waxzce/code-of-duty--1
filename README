@@ -1,0 +1,20 @@
+Pour faire fonctionner le programme, vous avez besoins de java 6 minimum
+
+Il fonctionne grâce aux scripts build.sh et run.sh sur système UNIX (codé sous macOS)
+
+Il a originalement été codé sous maven, puis scripté pour ne plus l'employer (ne pas faire attention au message d'erreur d'akka) avec les lib fourni dans le dossier éponyme
+
+L'emplois d'akka dans le programme le rend particulièrement dynamique et parallèle. En effet, akka est une librairie et un serveur écrit en scala qui permet de paralléliser et distribuer des tâche sur des grappes de serveur facilement et de façon élégante grâce au modèle d'acteur. plus d'info : akka.io
+
+NB : le programme en lui même est bien en java
+
+Il est donc possible théoriquement, et en recompilant avec le kernel akka de distribuer le calcul sur différents serveurs et de bénéficier ainsi de grandes performances
+
+Le programme permet quelques tweaks à découvrir avec un ./run.sh --help
+
+write by : Quentin ADAM @waxzce
+quentin.adam@waxzce.org
+
+
+Have a look on the pdf for the contest rules and the website : http://codeofduty.criteo.com/
+some rules about : no maven, no ant, on source file...
